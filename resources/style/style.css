@@ -5,6 +5,7 @@ body {
   background-color: black;
 }
 
+/* Mobile Nav */
 #nav-mobile {
   position: fixed;
   display: flex;
@@ -24,4 +25,34 @@ body {
 #logo {
   width: 60px;
   margin-left: 20px;
+}
+
+/* Header */
+header {
+  background-image: url("/resources/images/headerBKG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+header h1 {
+  position: relative;
+  width: 80%;
+  color: white;
 }
