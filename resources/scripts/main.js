@@ -1,10 +1,12 @@
 let sideNav = document.getElementById("mobile-menu");
 
 const openNav = () => {
-  sideNav.style.left = "0";
+  sideNav.style.visibility = "visible";
+  sideNav.style.width = "200px";
 }
 
 const closeNav = () => {
-  sideNav.style.left = "100%";
+  sideNav.style.width = "0px";
+  sideNav.style.visibility = "hidden";
 }
 

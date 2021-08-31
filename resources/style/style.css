@@ -5,6 +5,14 @@
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   background-color: #ffffff;
   text-transform: uppercase;
@@ -18,7 +26,7 @@ h2 {
 }
 
 /* Mobile Nav */
-#nav-mobile {
+#nav-mobile, #nav-desktop {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -39,12 +47,35 @@ h2 {
   margin-left: 20px;
 }
 
+/* Desktop Nav */
+#nav-desktop {
+  visibility: hidden;
+}
+
+#nav-desktop ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nav-desktop li {
+  margin: 0 10px;
+}
+
+#nav-desktop a {
+  color: black;
+}
+
+
 /* Mobile Slide Out Menu */
 #mobile-menu {
-  width: 100%;
+  width: 0;
   height: 500px;
+  visibility: hidden;
+  overflow-x: hidden;
   position: fixed;
-  left: 100%;
+  top: 0;
+  right: 0;
   z-index: 5;
   transition: 0.5s;
   background-color: #ffffff;
@@ -62,7 +93,6 @@ h2 {
 }
 
 #mobile-menu a {
-  text-decoration: none;
   color: black;
 } 
 
@@ -71,6 +101,16 @@ h2 {
   right: 25px;
   top: 20px;
   font-size: 1.7rem;
+}
+
+@media only screen and (min-width: 760px){
+  #nav-mobile {
+    visibility: hidden;
+  }
+
+  #nav-desktop {
+    visibility: visible;
+  }
 }
 
 /* Header */
@@ -104,7 +144,6 @@ header h1 {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  background-color: gray;
 }
 #about h3, #services h3 {
   margin: 5px 0;
@@ -134,8 +173,28 @@ header h1 {
 
 .pictures {
   width: 100%;
+  margin: 0 2px;
 }
 
 .pictures img {
   width: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+  #gallery {
+    flex-flow: row;
+  }
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: gray;
+  text-align: center;
+}
+
+footer a {
+  color: gray;
 }
