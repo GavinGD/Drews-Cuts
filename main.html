@@ -11,15 +11,53 @@
   <nav id="nav-mobile">
     <img id="logo" src="/resources/images/logo.png" alt="Drews Cuts">
     <div id="menu-btn">
-      <img src="/resources/images/menu.png" alt="menu button">
+      <img src="/resources/images/menu.png" alt="menu button" onclick="openNav()">
     </div>
   </nav>
-  <header>
-    <h1>Cuts, Shaves and Good Times</h1>
-  </header>
-  
-  <!-- <footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-  </footer> -->
+  <div id="mobile-menu">
+    <a onclick="closeNav()" class="closeBtn">&times;</a>
+    <ul>
+      <li><a href="#top" onclick="closeNav()">Home</a></li>
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#services" onclick="closeNav()">Services</a></li>
+      <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
+    </ul>
+  </div>
+    <header id="top">
+      <h1>Cuts, Shaves and Good Times</h1>
+    </header>
+    <section id="about">
+      <img src="/resources/images/avatar.png" alt="Andrew">
+      <div class="about-content">
+        <h2>Your New Barber</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </section>
+    <section id="services">
+      <div class="services-content">
+        <h2>Services and Prices</h2>
+        <h3>Hair Cut</h3>
+        <h3>Hot Shave</h3>
+      </div>
+    </section>
+    <section id="gallery">
+      <div class="pictures">
+        <img src="/resources/images/headerBKG.jpg" alt="">
+      </div>
+      <div class="pictures">
+        <img src="/resources/images/headerBKG.jpg" alt="">
+      </div>
+      <div class="pictures">
+        <img src="/resources/images/headerBKG.jpg" alt="">
+      </div>
+    </section>
+    
+    <!-- <footer>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer> -->
+
+  <script src="/resources/scripts/main.js"></script>
 </body>
 </html>
