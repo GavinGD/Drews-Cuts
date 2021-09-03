@@ -141,22 +141,23 @@ header h1 {
 
 /* About Section */
 #content-container {
-  width: 100%;
+  width: 99%;
   display: flex;
   flex-direction: column;
 }
 
 #about, #services {
-  width: 100%;
+  width: 97%;
   height: 500px;
-  margin: 5px auto;
-  padding-top: 50px;
+  margin: 10px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
+  box-shadow: 2px 2px 8px black;
 }
+
 #about h3, #services h3 {
   margin: 5px 0;
   font-size: .8rem;
@@ -179,6 +180,10 @@ header h1 {
   #content-container {
     flex-direction: row;
   }
+
+  #about, #services {
+    margin: 10px 10px;
+  }
 }
 
 /* Gallery */
@@ -190,15 +195,11 @@ header h1 {
 }
 
 .pictures {
-  margin: auto;
-  background-color: khaki;
   width: 100%;
 }
 
 .pictures img {
   width: 100%;
-  height: 500px;
-  margin: auto;
   object-fit: cover;
 }
 
@@ -215,12 +216,14 @@ header h1 {
 @media only screen and (min-width: 1200px) {
   /* choice 1 */
   #gallery {
-   flex-direction: row;
   }
 
   .pictures {
+    width: 50%;
+    margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .pictures img {
